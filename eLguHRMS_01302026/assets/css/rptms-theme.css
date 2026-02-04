@@ -1,0 +1,155 @@
+/* ============================================================
+   RPTMS Unified Theme (Login, Forgot, Reset & Auth Screens)
+   ============================================================ */
+
+/* 🔹 Background with blur + overlay */
+body {
+  background: url('../../uploads/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay + blur effect */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+/* 🔹 Auth Card (Glass Design) */
+.auth-card {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1rem;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* 🔹 Logo */
+.auth-card img {
+  width: 85px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(0, 128, 0, 0.3));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.auth-card img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(25, 135, 84, 0.5));
+}
+
+/* 🔹 Headings */
+.auth-card h4 {
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 🔹 Buttons (Green + Gold Accents) */
+.btn-success {
+  background-color: #198754;
+  border: none;
+  transition: all 0.2s ease;
+}
+.btn-success:hover {
+  background-color: #157347;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(25, 135, 84, 0.4);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+}
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* 🔹 Input Fields */
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+}
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 5px rgba(25, 135, 84, 0.4);
+}
+
+/* 🔹 Links */
+a {
+  color: #198754;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Fade & Scale Animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================
+   RPTMS Footer (Signature)
+   ========================================== */
+.rptms-footer {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+  z-index: 10;
+  opacity: 0;
+  animation: footerFade 1.8s ease forwards 0.5s;
+}
+
+.rptms-footer p {
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+@keyframes footerFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 0.9; transform: translateY(0); }
+}
+
+/* ==========================================
+   Modal Enhancements (Optional - System Use)
+   ========================================== */
+.modal-backdrop.show {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal.fade .modal-dialog {
+  transform: scale(0.95);
+  transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog {
+  transform: scale(1);
+}

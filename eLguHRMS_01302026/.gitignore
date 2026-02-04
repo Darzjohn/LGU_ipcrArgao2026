@@ -1,0 +1,62 @@
+# =====================================
+# 🚫 SECURITY: Do NOT track sensitive files
+# =====================================
+
+# Environment variables
+.env
+
+# =====================================
+# 🗂️ Application files to ignore
+# =====================================
+
+# Uploaded files and images
+uploads/
+!uploads/.gitkeep  # keep the folder structure, ignore contents
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Cache directories
+cache/
+tmp/
+session/
+
+# =====================================
+# 💻 IDE / Editor / OS files
+# =====================================
+
+# VS Code
+.vscode/
+
+# PhpStorm / JetBrains
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# =====================================
+# 🧱 Composer / Node (if used)
+# =====================================
+
+vendor/
+node_modules/
+
+# =====================================
+# ✅ Keep the following files
+# =====================================
+
+!.gitignore

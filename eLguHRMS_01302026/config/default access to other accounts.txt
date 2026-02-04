@@ -1,0 +1,30 @@
+=== RPTMS Default User Setup ===
+
+⚠️  Skipped: admin (already exists)
+
+✅ Created: assessor
+   Role: assessor
+   Password: c1e3a9348b
+   Hash: $2y$10$cFy4oA0zTivEFIgHcZYUKetO5VFi1dhw3yW8IZUPFLAGlCPzbXa4y
+
+✅ Created: assessment_clerk
+   Role: assessment_clerk
+   Password: 223d9f708a
+   Hash: $2y$10$lTLIBNAYbaKefkFO.Fx0IOuWiIE38neIaxYpwT54CGdwokGAh6ekq
+
+✅ Created: treasurer
+   Role: treasurer
+   Password: d3a06a9ed0
+   Hash: $2y$10$kxRjUTEIie389wkHCZZ.b.KvPBvrKI1IG8zzQMZBh1oJjFItXJIja
+
+✅ Created: cashier
+   Role: cashier
+   Password: d4a4791a7c
+   Hash: $2y$10$.3McCfULNNGXP9TE1P79UuEzM6/VvKZO40985nEm4RYzAxCotrv.q
+
+✅ Created: viewer
+   Role: viewer
+   Password: 8c82880ee5
+   Hash: $2y$10$oiVrNNs5wM8G7nxTAAYvSuIwMRGkJ..RDFnPcYCcpXJCCkqnCj/kS
+
+=== Setup complete. Copy credentials above, then DELETE this file! ===
