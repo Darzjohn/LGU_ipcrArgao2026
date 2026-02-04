@@ -17,7 +17,7 @@ $role = $_SESSION['role'] ?? 'viewer';
         <a href="positions.php" class="nav-link"><i class="bi bi-person-badge me-2"></i> Positions</a>
         <a href="employment_status.php" class="nav-link"><i class="bi bi-person-badge me-2"></i> Employment Status</a>
 
-         <a href="ipcr_doris.php" class="nav-link"><i class="bi bi-person-badge me-2"></i> IPCR</a>
+       <a href="ipcr_doris_page1.php" class="nav-link"><i class="bi bi-person-badge me-2"></i> IPCR</a>
 
 
       <?php elseif ($role === 'hr' || $role === 'hr_staff'): ?>

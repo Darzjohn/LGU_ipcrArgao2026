@@ -1,9 +1,9 @@
 <?php
-require_once __DIR__. '/../auth/session_check.php';
-require_once __DIR__. '/../config/db.php';
-require_once __DIR__. '/../config/settings.php';
-require_once __DIR__. '/../layouts/header.php';
-require_once __DIR__. '/../layouts/sidebar.php';
+require_once __DIR__ . '/../auth/session_check.php';
+require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../config/settings.php';
+require_once __DIR__ . '/../layouts/header.php';
+require_once __DIR__ . '/../layouts/sidebar.php';
 
 function h($v) { return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
 
@@ -184,7 +184,17 @@ $rows = [
     <?php endforeach; ?>
   </table>
 
+ <div style="margin-top:14px; display:flex; justify-content:flex-end; gap:10px;">
+   <a href="ipcr_doris_page2.php"
+     style="padding:10px 14px;border:1px solid #333;background:#fff;color:#000;text-decoration:none;border-radius:6px;">
+     Next Page ➜
+  </a>
 </div>
+
+
+</div>
+
+
 
 <?php
 require_once __DIR__. '/../layouts/footer.php';
